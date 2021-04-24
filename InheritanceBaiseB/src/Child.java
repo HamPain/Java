@@ -1,13 +1,13 @@
-//extends : È®ÀåÇÏ´Ù
-//ÀÚ¹Ù´Â ´ÜÀÏ »ó¼ÓÀ» ¿øÄ¢À¸·Î ÇÑ´Ù. ´ÙÁß »ó¼Ó Áö¿ø ¾ÈÇÔ
-//c++ ´Â ´ÙÁß»ó¼ÓÀ» Áö¿øÇÑ´Ù
-//ÀÚ¹Ù´Â ´ÜÀÏ »ó¼ÓÀÇ ¹®Á¦¸¦ ÇØ°áÇÏ±â À§ÇØ implemants (±¸Çö) À» ÀÌ¿ëÇÏ¿© ´ÙÁß »ó¼ÓÀ» Áö¿øÇÑ´Ù
+//extends : í™•ìž¥í•˜ë‹¤
+//ìžë°”ëŠ” ë‹¨ì¼ ìƒì†ì„ ì›ì¹™ìœ¼ë¡œ í•œë‹¤. ë‹¤ì¤‘ ìƒì† ì§€ì› ì•ˆí•¨
+//c++ ëŠ” ë‹¤ì¤‘ìƒì†ì„ ì§€ì›í•œë‹¤
+//ìžë°”ëŠ” ë‹¨ì¼ ìƒì†ì˜ ë¬¸ì œë¥¼ í•´ê²°í•˜ê¸° ìœ„í•´ implemants (êµ¬í˜„) ì„ ì´ìš©í•˜ì—¬ ë‹¤ì¤‘ ìƒì†ì„ ì§€ì›í•œë‹¤
 
 public class Child extends Parent {
 	
 	public Child() {
-		this.strName = "Àü°æÈ¯Àº ¼úº´³­°Ô ¸Â´Ù.";
-		System.out.println("ÀÚ½Ä »ý¼ºÀÚ È£Ãâ");
+		this.strName = "ë‚˜ëŠ” ì‹œí—˜ì„ ì•ˆë³´ê³  ê²Œìž„ì„ í•œê²Œ ë§žë‹¤.";
+		System.out.println("ìžì‹ ìƒì„±ìž í˜¸ì¶œ");
 		
 	}
 }
