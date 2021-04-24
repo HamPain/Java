@@ -2,23 +2,23 @@
 public class ProjcetMain {
 
 	public static void main(String[] args) {
-//		¾Æ·¡ ÄÚµå¿¡¼­ °ü¸®ÀÚ °´Ã¼°¡ 2°³ ÀÌ»ó »ı¼º °¡´ÉÇÏ´Ù.
-//		ÀÌ´Â ÇÏ³ª ÀÌ»óÀÇ °´Ã¼¸¦ ÅëÇØ DB¿¡ Á¢¼ÓÀÌ °¡´ÉÇÏ´Ù´Â ¶æÀÌ´Ù.
-//		ÀÌ·¸°Ô µÇ¸é DBÀÇ µ¿½Ã Á¢¼Ó »óÅÂ¿¡¼­ DBÀÇ ¹«°á¼º¿¡ ¹®Á¦°¡ ¹æ»ıÇÒ ¼ö ÀÖ´Ù.
-//		ÀÌ¸¦ Â÷´ÜÇÏ±â À§ÇØ Singleton patternÀ¸·Î ÄÚµå¸¦ ±¸¼ºÇÑ´Ù.
+//		ì•„ë˜ ì½”ë“œì—ì„œ ê´€ë¦¬ì ê°ì²´ê°€ 2ê°œ ì´ìƒ ìƒì„± ê°€ëŠ¥í•˜ë‹¤.
+//		ì´ëŠ” í•˜ë‚˜ ì´ìƒì˜ ê°ì²´ë¥¼ í†µí•´ DBì— ì ‘ì†ì´ ê°€ëŠ¥í•˜ë‹¤ëŠ” ëœ»ì´ë‹¤.
+//		ì´ë ‡ê²Œ ë˜ë©´ DBì˜ ë™ì‹œ ì ‘ì† ìƒíƒœì—ì„œ DBì˜ ë¬´ê²°ì„±ì— ë¬¸ì œê°€ ë°©ìƒí•  ìˆ˜ ìˆë‹¤.
+//		ì´ë¥¼ ì°¨ë‹¨í•˜ê¸° ìœ„í•´ Singleton patternìœ¼ë¡œ ì½”ë“œë¥¼ êµ¬ì„±í•œë‹¤.
 //		DBManager man1 = new DBManager();
 //		DBManager man2 = new DBManager();
-//		DBManager man1 = DBManager.getInstance("È«");
+//		DBManager man1 = DBManager.getInstance("í™");
 //		man1.readTable();
-//		DBManager man2 = DBManager.getInstance("±æ");
+//		DBManager man2 = DBManager.getInstance("ê¸¸");
 //		man2.readTable();
-//		DBManager man3 = DBManager.getInstance("µ¿");
+//		DBManager man3 = DBManager.getInstance("ë™");
 //		man3.readTable();
-		NCS n1 = NCS.getInstance("¼Õ¹ÎÈ£");
+		NCS n1 = NCS.getInstance("ë¯¼í˜¸");
 		n1.read();
-		NCS n2 =  NCS.getInstance("±è°üÈ£");
+		NCS n2 =  NCS.getInstance("ê´€í˜¸");
 		n2.read();
-		NCS n3 =  NCS.getInstance("ÇÔ±âÂù");
+		NCS n3 =  NCS.getInstance("ë—ì");
 		n3.read();
 		
 	}
