@@ -1,31 +1,31 @@
 import java.util.ArrayList;
 
 public class MyStack {
-//	¸®½ºÆ®¸¦ NULL°ªÀ¸·Î ÃÊ±âÈ­
+//	ë¦¬ìŠ¤íŠ¸ë¥¼ NULLê°’ìœ¼ë¡œ ì´ˆê¸°í™”
    public ArrayList list = null; 
    
    public MyStack() {
-	   list = new ArrayList(); //list ¿¡ arraylist °´Ã¼ »ı¼º 
-	   push("È«±æµ¿"); //¸Ş¼Òµå Çª½¬¸¦ ½ÇÇà , °ªÀº È«±æµ¿À» ³Ö¾îÁÜ
-	   push("ÇÔ±âÂù"); //¸Ş¼Òµå Çª½¬¸¦ ½ÇÇà , °ªÀº  ÇÔ±âÂùÀ» ³Ö¾îÁÜ
-	   pop(); //¸Ş¼Òµå ÆËÀ» ½ÇÇà , Á¦ÀÏ ÃÖ±Ù°ª ÇÔ±âÂù ÀÌ¶ó´Â °ªÀÌ ³ª¿È
-	   prnList(); // ¸ğµç ¸®½ºÆ®¸¦ Ãâ·Â
+	   list = new ArrayList(); //list ì— arraylist ê°ì²´ ìƒì„± 
+	   push("í™ê¸¸ë™"); //ë©”ì†Œë“œ í‘¸ì‰¬ë¥¼ ì‹¤í–‰ , ê°’ì€ í™ê¸¸ë™ì„ ë„£ì–´ì¤Œ
+	   push("ë—ìë¦¬"); //ë©”ì†Œë“œ í‘¸ì‰¬ë¥¼ ì‹¤í–‰ , ê°’ì€  ë—ìë¦¬ë¥¼ ë„£ì–´ì¤Œ
+	   pop(); //ë©”ì†Œë“œ íŒì„ ì‹¤í–‰ , ì œì¼ ìµœê·¼ê°’ ë—ìë¦¬ ì´ë¼ëŠ” ê°’ì´ ë‚˜ì˜´
+	   prnList(); // ëª¨ë“  ë¦¬ìŠ¤íŠ¸ë¥¼ ì¶œë ¥
    }
  
    public void push(String str) {
-      list.add(str);  //  list ¶ó´Â arraylist¿¡ ¹ŞÀº°ªÀ» ³Ö¾îÁÜ
+      list.add(str);  //  list ë¼ëŠ” arraylistì— ë°›ì€ê°’ì„ ë„£ì–´ì¤Œ
    }
    
    public void pop() {
-      if(!list.isEmpty()) // ¸¸¾à list °´Ã¼°¡ ºó°ªÀÌ ¾Æ´Ï¸é ½ÇÇà
-         list.remove(list.size() - 1); //  list ¶ó´Â arraylist¿¡ ¸®½ºÆ® »çÀÌÁîº¸´Ù 1³·Àº ÀÚ¸®¿¡ ÀÖ´Â °ªÀ» ²¨³¿
-      else  // ¾Æ´Ï¶ó¸é ¹ØÀÇ Ãâ·Â¹® ½ÇÇà
-         System.out.println("½ºÅÃÀÌ ºñ¾ú½À´Ï´Ù."); 
+      if(!list.isEmpty()) // ë§Œì•½ list ê°ì²´ê°€ ë¹ˆê°’ì´ ì•„ë‹ˆë©´ ì‹¤í–‰
+         list.remove(list.size() - 1); //  list ë¼ëŠ” arraylistì— ë¦¬ìŠ¤íŠ¸ ì‚¬ì´ì¦ˆë³´ë‹¤ 1ë‚®ì€ ìë¦¬ì— ìˆëŠ” ê°’ì„ êº¼ëƒ„
+      else  // ì•„ë‹ˆë¼ë©´ ë°‘ì˜ ì¶œë ¥ë¬¸ ì‹¤í–‰
+         System.out.println("ìŠ¤íƒì´ ë¹„ì—ˆìŠµë‹ˆë‹¤."); 
    }
    
-   public void prnList() { // listÀÇ ¸ğµç °ªÀ» printÇÏ´Â ¸Ş¼Òµå
-      for (int i = 0; i < list.size(); i++) { // i¸¦0ºÎÅÍ list size ±îÁö ´õÇÏ¸ç ½ÇÇà
-		System.out.println(list.get(i)); // i °ª¿¡ ¸ÂÃç ÇÏ³ª¾¿ Ãâ·Â
+   public void prnList() { // listì˜ ëª¨ë“  ê°’ì„ printí•˜ëŠ” ë©”ì†Œë“œ
+      for (int i = 0; i < list.size(); i++) { // ië¥¼0ë¶€í„° list size ê¹Œì§€ ë”í•˜ë©° ì‹¤í–‰
+		System.out.println(list.get(i)); // i ê°’ì— ë§ì¶° í•˜ë‚˜ì”© ì¶œë ¥
 	}
    }
 }
